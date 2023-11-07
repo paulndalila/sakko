@@ -148,9 +148,11 @@ WSGI_APPLICATION = 'sakko.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': 'dbconfig.cnf',
-        },
+        'NAME': 'sakko',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
